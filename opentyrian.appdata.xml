@@ -28,11 +28,15 @@
   </releases>
   <screenshots>
     <screenshot type="default">
-      <image>https://media.moddb.com/images/games/1/16/15907/OpenTyrian_011.png</image>
+      <image>https://media.moddb.com/images/games/1/16/15907/OpenTyrian_013.png</image>
+      <caption>Episode selection</caption>
+    </screenshot>
+    <screenshot type="default">
+      <image>https://media.moddb.com/images/games/1/16/15907/OpenTyrian_016.png</image>
       <caption>Menue</caption>
     </screenshot>
     <screenshot type="default">
-      <image>https://media.moddb.com/images/games/1/16/15907/OpenTyrian_014.png</image>
+      <image>https://media.moddb.com/images/games/1/16/15907/OpenTyrian_008.png</image>
       <caption>Ingame</caption>
     </screenshot>
     <screenshot type="default">
@@ -40,16 +44,12 @@
       <caption>Ingame</caption>
     </screenshot>
     <screenshot type="default">
-      <image>https://media.moddb.com/images/games/1/16/15907/OpenTyrian_008.png</image>
+      <image>https://media.moddb.com/images/games/1/16/15907/OpenTyrian_014.png</image>
       <caption>Ingame</caption>
     </screenshot>
     <screenshot type="default">
-      <image>https://media.moddb.com/images/games/1/16/15907/OpenTyrian_016.png</image>
+      <image>https://media.moddb.com/images/games/1/16/15907/OpenTyrian_011.png</image>
       <caption>Menue</caption>
-    </screenshot>
-    <screenshot type="default">
-      <image>https://media.moddb.com/images/games/1/16/15907/OpenTyrian_013.png</image>
-      <caption>Episode selection</caption>
     </screenshot>
   </screenshots>
 </component>
