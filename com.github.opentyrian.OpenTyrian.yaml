@@ -1,6 +1,6 @@
 app-id: com.github.opentyrian.OpenTyrian
 runtime: org.freedesktop.Platform
-runtime-version: '21.08'
+runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 finish-args:
   - --device=all
@@ -18,6 +18,15 @@ rename-desktop-file: opentyrian.desktop
 rename-icon: opentyrian
 copy-icon: true
 modules:
+  - name: SDL2_net
+    buildsystem: cmake-ninja
+    builddir: true
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=Release
+    sources:
+      - type: git
+        url: https://github.com/libsdl-org/SDL_net.git
+        tag: release-2.2.0
   - name: opentyrian
     buildsystem: simple
     build-commands:
