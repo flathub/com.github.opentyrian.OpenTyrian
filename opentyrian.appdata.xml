@@ -60,4 +60,5 @@
     <keyword>dos emulator</keyword>
     <keyword>arcade style game</keyword>
   </keywords>
+  <launchable type="desktop-id">opentyrian.desktop</launchable>
 </component>
