@@ -53,4 +53,5 @@
       <caption>Menue</caption>
     </screenshot>
   </screenshots>
+  <launchable type="desktop-id">opentyrian.desktop</launchable>
 </component>
