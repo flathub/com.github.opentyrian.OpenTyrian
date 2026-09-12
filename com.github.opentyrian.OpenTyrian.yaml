@@ -1,7 +1,12 @@
 app-id: com.github.opentyrian.OpenTyrian
 runtime: org.freedesktop.Platform
-runtime-version: '25.08'
+runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
+command: opentyrian
+rename-appdata-file: opentyrian.appdata.xml
+rename-desktop-file: opentyrian.desktop
+rename-icon: opentyrian
+copy-icon: true
 finish-args:
   - --device=all
   - --share=network
@@ -12,11 +17,12 @@ finish-args:
   - --socket=pulseaudio
   # Savefiles
   - --persist=.opentyrian
-command: opentyrian
-rename-appdata-file: opentyrian.appdata.xml
-rename-desktop-file: opentyrian.desktop
-rename-icon: opentyrian
-copy-icon: true
+cleanup:
+  - /include
+  - /lib/cmake
+  - /lib/pkgconfig
+  - /share/doc
+  - /share/man
 modules:
   - name: SDL2_net
     buildsystem: cmake-ninja
@@ -27,6 +33,8 @@ modules:
       - type: git
         url: https://github.com/libsdl-org/SDL_net.git
         tag: release-2.2.0
+        commit: 669e75b84632e2c6cc5c65974ec9e28052cb7a4e
+
   - name: opentyrian
     buildsystem: simple
     build-commands:
