@@ -51,8 +51,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/opentyrian/opentyrian
-        tag: v2.1.20221123
-        commit: 50ba3629bf114d5615c17c56c03a04a9cbeb6d6f
+        tag: v2.1.20260912
+        commit: abecbbaa78b7066cf197e0eaa4bf19ab6e98ea3a
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
