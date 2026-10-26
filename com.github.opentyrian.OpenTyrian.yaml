@@ -8,11 +8,19 @@ rename-desktop-file: opentyrian.desktop
 rename-icon: opentyrian
 copy-icon: true
 finish-args:
-  - --device=all
+  # Input devices such as controllers
+  - --device=input
+  # Direct Rendering Interface. Necessary for GL.
+  - --device=dri
+  # Fallback to all devices on Flatpak versions without input device support
+  - --device-if=all:!has-input-device
+  # Wayland access with X11 fallback
+  - --socket=wayland
+  - --socket=fallback-x11
+  # Network
   - --share=network
-  # X11 + XShm access
+  # XShm access
   - --share=ipc
-  - --socket=x11
   # Pulseaudio access
   - --socket=pulseaudio
   # Savefiles
